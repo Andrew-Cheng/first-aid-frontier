@@ -1,0 +1,29 @@
+/* Full viewport background with your image */
+.bg {
+  background: url('./img/image.png') no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  
+  /* Center content (the iframe) both horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Remove default margins and padding */
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust the iframe size to be smaller than before */
+.video {
+  /* Use 90% of the container's width (adjust as needed) */
+  width: 90%;
+  
+  /* For a YouTube video, maintain a typical 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  
+  /* Optionally, restrict the maximum size */
+  max-width: 1200px;
+  max-height: 800px;
+}
